@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/prdctName"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/prdName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/fab_margin"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/prdctPrice"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/prdPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/fab_margin"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/prdctQuantity"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:layout_marginLeft="@dimen/fab_margin"
+
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:text="-"
+        android:id="@+id/decreaseQuantity"
+        android:layout_height="@dimen/button_width" />
+
+        <EditText
+            android:id="@+id/prdQuantity"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:text="0"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:text="+"
+        android:id="@+id/increaseQuantity"
+        android:layout_height="@dimen/button_width" />
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/supplier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/prdctSupplier"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/prdSupplier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/fab_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/supplierPhone"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/supplierPhone"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:maxLength="13"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderProduct"
+        android:background="@drawable/button_shape"
+        android:text="New order"
+        android:layout_gravity="center"/>
+</LinearLayout>
